@@ -17,15 +17,15 @@ function rabbit(garden) {
 function isCarrot(garden, x, y) {
     if (x < 0 || x >= garden.length) {
         return;
-    }
+    };
 
     if (y < 0 || y >= garden[x].length) {
         return;
-    }
+    };
 
     if (garden[x][y] !== "x") {
         return;
-    }
+    };
 
     garden[x][y] = "eaten";
 
@@ -33,7 +33,7 @@ function isCarrot(garden, x, y) {
     isCarrot(garden, x - 1, y);
     isCarrot(garden, x, y + 1);
     isCarrot(garden, x, y - 1);
-}
+};
 
 rabbit([
     ["x", "x", " ", " ", " "],

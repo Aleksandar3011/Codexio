@@ -1,4 +1,5 @@
 function elf(firstWord, secondWord){
+    
     let str1 = firstWord.split("");
     let str2 = secondWord.split("");
 
